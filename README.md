@@ -6,10 +6,11 @@ Simple logging system using SQLite3
 ```
 include 'Log.php';
 
-Log::add('Vamo testear isso');
+Log::add('Vamo testar isso');
 
 //insert
-Log::add('REGISTRO DE LOG DO SISTEMA '. date("G:i"), 'ADMIN', 1);
+//MSG,CAT,TIPO
+Log::add('REGISTRO DE LOG DO SISTEMA ', 'CATEGORIA: ADMIN', 1);
 
 
 //find id
